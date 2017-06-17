@@ -1,0 +1,221 @@
+{
+  "semantics": [
+    {
+      "label": "Pilt või video",
+      "fields": [
+        {
+          "label": "Tüüp",
+          "description": "Pilt või video, mida kuvatakse küsimuse juures"
+        }
+      ]
+    },
+    {
+      "label": "Küsimus"
+    },
+    {
+      "label": "Vastusevariandid",
+      "entity": "option",
+      "field": {
+        "label": "Vastusevariant",
+        "fields": [
+          {
+            "label": "Tekst"
+          },
+          {
+            "label": "Õige"
+          },
+          {
+            "label": "Vihje ja tagasiside",
+            "fields": [
+              {
+                "label": "Vihje tekst",
+                "description": "Vihje, mis suunab kasutajat õige vastusevariandi poole. Vihjet saab kasutaja vaadata enne vastuse sisestamist."
+              },
+              {
+                "label": "Tekst, mida kasutaja näeb pärast selle vastusevariandi sisestamist",
+                "description": "See tekst ilmub vastusevariandi alla kui kasutaja klõpsab \"Kontrolli\"."
+              },
+              {
+                "label": "Tekst, mida kasutaja näeb pärast selle vastusevariandi valimata jätmist",
+                "description": "See tekst ilmub vastusevariandi alla kui kasutaja klõpsab \"Kontrolli\"."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Kasutajaliidese tõlked mitmikvalikuga küsimuse puhul",
+      "fields": [
+        {
+          "label": "Check answer button label",
+          "default": "Kontrolli"
+        },
+        {
+          "label": "Show solution button label",
+          "default": "Näita õiget vastust"
+        },
+        {
+          "label": "Retry button label",
+          "default": "Proovi uuesti"
+        },
+        {
+          "label": "Tip label",
+          "default": "Näita vihjet"
+        },
+        {
+          "label": "Correct answer feedback"
+        },
+        {
+          "label": "Almost correct answer feedback"
+        },
+        {
+          "label": "Not correct answer feedback"
+        },
+        {
+          "label": "Score Bar Label",
+          "default": "Skoor"
+        },
+        {
+          "label": "Tip Available (not displayed)",
+          "default": "Saab küsida vihjet",
+          "description": "Accessibility text used for readspeakers"
+        },
+        {
+          "label": "Feedback Available (not displayed)",
+          "default": "Saab küsida tagasisidet",
+          "description": "Accessibility text used for readspeakers"
+        },
+        {
+          "label": "Read Feedback (not displayed)",
+          "default": "Loe ette tagasiside",
+          "description": "Accessibility text used for readspeakers"
+        },
+        {
+          "label": "Wrong Answer (not displayed)",
+          "default": "Vale vastus",
+          "description": "Accessibility text used for readspeakers"
+        },
+        {
+          "label": "Correct Answer (not displayed)",
+          "default": "Õige vastus",
+          "description": "Accessibility text used for readspeakers"
+        },
+        {
+          "label": "Feedback text",
+          "default": "Said @score punkti @total võimalikust",
+          "description": "Feedback text, variables available: @score and @total. Example: 'You got @score of @total points.'"
+        },
+        {
+          "label": "Option should have been checked",
+          "default": "See vastusevariant oleks pidanud olema valitud"
+        },
+        {
+          "label": "Option should not have been checked",
+          "default": "See vastusevariant oleks pidanud jääma valimata"
+        },
+        {
+          "label": "Text for \"Requires answer\" message",
+          "default": "Enne õige vastusevariandi nägemist tuleb esitada oma vastus"
+        }
+      ]
+    },
+    {
+      "label": "Küsimuse seaded",
+      "description": "Nende seadete abil on võimalik määrata küsimuse käitumist.",
+      "fields": [
+        {
+          "label": "Enable \"Retry\" button"
+        },
+        {
+          "label": "Enable \"Show Solution\" button"
+        },
+        {
+          "label": "Küsimuse tüüp",
+          "description": "Select the look and behaviour of the question.",
+          "options": [
+            {
+              "label": "Automaatne"
+            },
+            {
+              "label": "Mitu mitmest (Checkboxes)"
+            },
+            {
+              "label": "Üks mitmest (Radio Buttons)"
+            }
+          ]
+        },
+        {
+          "label": "Õige vastuse puhul saab 1 punkti",
+          "description": "Enable to give a total of one point for multiple correct answers. This will not be an option in \"Single answer\" mode."
+        },
+        {
+          "label": "Vastusevariantide juhuslik järjestus",
+          "description": "Enable to randomize the order of questions on display."
+        },
+        {
+          "label": "Nõua vastamist enne kui õiget vastust saab kuvada"
+        },
+        {
+          "label": "Keela pildi suumimine"
+        },
+        {
+          "label": "Näita kinnitusdialoogi kui kasutaja klõpsab \"Kontrolli\""
+        },
+        {
+          "label": "Näita kinnitusdialoogi kui kasutaja klõpsab \"Proovi veel\""
+        },
+        {
+          "label": "Kontrolli vastusevariante automaatselt",
+          "description": "Enabling this option will make accessibility suffer, make sure you know what you're doing."
+        },
+        {
+          "label": "Protsentuaalne tulemus, mis loetakse õigeks",
+          "description": "Percentage of Total score required for passing the quiz."
+        }
+      ]
+    },
+    {
+      "label": "Kontrolli dialoog",
+      "fields": [
+        {
+          "label": "Pealkiri",
+          "default": "Valmis ?"
+        },
+        {
+          "label": "Sõnumi tekst",
+          "default": "Are you sure you wish to finish ?"
+        },
+        {
+          "label": "Cancel button label",
+          "default": "Katkesta"
+        },
+        {
+          "label": "Confirm button label",
+          "default": "Kinnita"
+        }
+      ]
+    },
+    {
+      "label": "Retry confirmation dialog",
+      "fields": [
+        {
+          "label": "Header text",
+          "default": "Proovid veel ?"
+        },
+        {
+          "label": "Body text",
+          "default": "Kas oled kindel, et soovid veel katsetada ?"
+        },
+        {
+          "label": "Cancel button label",
+          "default": "Katkesta"
+        },
+        {
+          "label": "Confirm button label",
+          "default": "Kinnita"
+        }
+      ]
+    }
+  ]
+}
